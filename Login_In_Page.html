@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The Recipier</title>
+        <link rel="icon" type="image/png" href="logoo.png"/>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body class = "loginpage">
+        <header>
+            <div class="navbar">
+                <a href="Login_In_Page.html"> Login </a>
+                <a href="home.html"> Home </a>
+            
+               
+                <div class="sub-nav">
+                    <button class="btn">Recipes<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        
+                          
+                        <li style="list-style-type: none;">
+                            <a href="English_break.html"> Breakfast </a>
+                            <ul class="new">
+                                <li><a href="English_break.html">English</a></li>
+                                <li><a href="French_break.html">French</a></li>
+                            </ul>
+                        </li>
+                            <li class="none" style="list-style-type: none;">
+                                <a href="Pizza.html"> Dinner Pizza </a>
+                                <a href="sweet.html"> Sweet </a>
+                            </li>
+                           
+                    
+                    </div>
+                </div>
+            
+                
+            
+                <div class="sub-nav">
+                    <button class="btn">Dinner<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Pizza.html"> Pizza </a>
+                        <a href="pasta.html"> Pasta </a>
+                        <a href="burger.html"> Burger </a>
+                    </div>
+                </div>
+                
+                <div class="sub-nav">
+                    <button class="btn">Help<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Support.html"> Support </a>
+                        <a href="FAQ.html"> FAQ </a>
+                        <a href="Contact.html"> Contact us </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <marquee behavior="alternate" direction="left" scrollamount="10"><h1>WELCOME</h1></marquee>
+        <img src = "cooking.gif" width = "700px" height="300px">
+        <div>
+            <form id="form_elements">
+                <label style="border: 0.5px solid ">Username : </label>
+                <label><input type="text" name="username"  placeholder="default login is ahmed " id = "username" width = 100px required></label>
+                <br>
+                <br>    
+                <label style="border: 0.5px solid ">Password : </label>
+                <label><input type="password" name="password" id = "password" placeholder="default pass is 1234 " width = 100px required></label>
+                <input type="submit" name="submit" value="Login" style="border: 0.5px solid ;">
+            </form>
+        </div>
+
+        <div id = "go_to_sign_up">
+            <label>New User ?</label>
+            <input type="button" name="signup" value="Sign Up" onclick="window.location.href='Sign_Up_Page.html'" style="border: 0.5px solid">
+            <br>
+        </div>
+
+        <br>
+
+        <div style="text-align: center;"><a href = "Contact.html">Contact us</a></div>
+
+
+
+    </body>
+
+    <footer id = "footer">
+        <div>
+        <p><span>&copy;</span>Created by Ahmed Ibrahim Sharaf Eldin </p>
+        <div>
+    </footer>
+</html>

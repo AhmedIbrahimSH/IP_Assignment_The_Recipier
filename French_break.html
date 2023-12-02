@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class = "test">
+<head>
+    <title>The Recipier</title>
+    <link rel="icon" type="image/png" href="logoo.png"/>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="main.js"></script>
+</head>
+<body class = "english">
+    <header class = "no_change" >
+        <div class="navbar">
+                <a href="Login_In_Page.html"> Login </a>
+                <a href="home.html"> Home </a>
+            
+               
+                <div class="sub-nav">
+                    <button class="btn">Recipes<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        
+                          
+                        <li style="list-style-type: none;">
+                            <a href="English_break.html"> Breakfast </a>
+                            <ul class="new">
+                                <li><a href="English_break.html">English</a></li>
+                                <li><a href="French_break.html">French</a></li>
+                            </ul>
+                        </li>
+                            <li class="none" style="list-style-type: none;">
+                                <a href="Pizza.html"> Dinner Pizza </a>
+                                <a href="sweet.html"> Sweet </a>
+                            </li>
+                           
+                    
+                    </div>
+                </div>
+            
+                
+            
+                <div class="sub-nav">
+                    <button class="btn">Dinner<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Pizza.html"> Pizza </a>
+                        <a href="pasta.html"> Pasta </a>
+                        <a href="burger.html"> Burger </a>
+                    </div>
+                </div>
+                
+                <div class="sub-nav">
+                    <button class="btn">Help<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Support.html"> Support </a>
+                        <a href="FAQ.html"> FAQ </a>
+                        <a href="Contact.html"> Contact us </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </header>
+        
+        <img src="french.gif" width = 150px height="150px" style="float: right;">
+        <img src="french.gif" width = 150px height="150px" style="float: left;">
+    
+
+        <div style="text-align: center; padding-top: 30px;">
+            <button id="leftArrowButton">←</button>
+            <button id="rightArrowButton">→</button>
+        </div>
+      
+
+        
+        <div class="container">
+            <div id="recipe-steps">
+                <h1>Croissant and Coffee</h1>
+                <ol>
+                    
+                    <li><strong>Find Quality Croissants:</strong> Source fresh, buttery croissants from a reputable bakery. If unavailable, you can use frozen croissant dough.</li>
+                    <br>
+                    <li><strong>Preheat Oven:</strong> If baking croissants at home, preheat your oven to 375°F (190°C).</li>
+                    <br>
+                    <li><strong>Bake Croissants:</strong> Place croissants on a baking sheet lined with parchment paper. Bake for 15-20 minutes until they puff up and turn golden brown.</li>
+                    <br>
+                    <li><strong>Prepare Coffee:</strong> Brew a strong coffee. A French press is ideal for authentic flavor, but any method will do. Use freshly ground coffee beans for the best taste.</li>
+                    <br>
+                    <li><strong>Serve Croissants:</strong> Allow croissants to cool slightly. They can be served plain or sliced open and filled with chocolate, cheese, ham, or almond paste, depending on preference.</li>
+                    <br>
+                    <li><strong>Accompaniments:</strong> Offer sides like fresh fruit, yogurt, or a selection of cheeses to complement the croissants.</li>
+                    <br>
+                    <li><strong>Final Touch:</strong> Serve the warm croissants with the freshly brewed coffee. Optionally, add milk, cream, or sugar to the coffee as desired.</li>
+                </ol>
+            </div>
+
+            <div id = "beans_recipe" style="display: none;">
+                <h1>Baguette with Jam and Butter</h1>
+                <ol>
+                    <li><strong>Select a Fresh Baguette:</strong> Choose a crusty, freshly baked baguette from a local bakery for the best quality and flavor.</li>
+                    <br>
+                    <li><strong>Slice the Baguette:</strong> Cut the baguette diagonally into medium-thick slices. This enhances the surface area for spreading toppings.</li>
+                    <br>
+                    <li><strong>Prepare Toppings:</strong> Arrange a variety of jams, such as strawberry, apricot, or raspberry. Unsalted butter should be at room temperature for easy spreading.</li>
+                    <bR>
+                    <li><strong>Additional Options:</strong> For a more substantial breakfast, consider adding toppings like sliced cheese or cured meats.</li>
+                    <br>
+                    <li><strong>Serve:</strong> Spread a generous amount of butter on each slice of baguette, followed by your choice of jam. Pair with a hot beverage like coffee or tea.</li>
+                    <br>
+                    <li><strong>Side Dishes:</strong> Complement the meal with sides such as fresh fruit salad, a selection of cheeses, or soft-boiled eggs.</li>
+                    <br>
+                    <li><strong>Enjoy Your Breakfast:</strong> Arrange everything nicely on a plate and enjoy this classic French breakfast with a cup of hot coffee or tea.</li>
+                </ol>
+            </div>
+            <div id="sausage_video" style="display: block;">
+                <h2 style="text-align: center;">Recipe Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hJxaVD6eAtc?si=a59EdVM5MrhfJ1bS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </div>
+
+            <div id="beans_vid" style="display: none;">
+                <h2 style="text-align: center;">Recipe Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUCuUKZN7M0?si=h-lbgabpTWKlNULP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+            </div>
+
+
+
+
+<script>
+
+    document.getElementById('rightArrowButton').addEventListener('click', function(e) {
+        document.getElementById('sausage_video').style.display = 'none';
+        document.getElementById('beans_vid').style.display = 'block';
+        document.getElementById('recipe-steps').style.display = 'none';
+        document.getElementById('beans_recipe').style.display = 'block';
+      
+    
+    });
+    document.getElementById('leftArrowButton').addEventListener('click', function(e) {
+        
+        document.getElementById('beans_vid').style.display = 'none';
+        document.getElementById('sausage_video').style.display = 'block';
+        document.getElementById('beans_recipe').style.display = 'none';
+
+        document.getElementById('recipe-steps').style.display = 'block';
+                        
+    
+    });
+
+
+    function redirectToBeansEnglishBreakfast() {
+        window.location.href = "Beans_English_break.html";
+    }
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,386 @@
+#myimage{
+   
+}
+
+.loginpage{
+    background-image: url('login_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.second_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login_form{
+    
+}
+
+#rightArrowButton {
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: 1px solid #ccc;
+    background-color: #f8f8f8; 
+    cursor: pointer;
+}
+
+#rightArrowButton:hover {
+    background-color: #e7e7e7;
+}
+
+#leftArrowButton{
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: 1px solid #ccc;
+    background-color: #f8f8f8; 
+    cursor: pointer;
+}
+
+#leftArrowButton:hover {
+    background-color: #e7e7e7;
+}
+
+
+#footer{
+    padding-top: 90px;
+}
+#signup_footer{
+    padding-top: 0px;
+}
+
+div.a{
+
+    background-color: red;
+}
+#go_to_sign_up{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_elements{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    
+}
+
+ol li{
+    padding-left: 0px;
+}
+
+.english{
+    background-Repeat : no-repeat;
+    background-Size : cover;
+
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#signupForm label, #signupForm input {
+    margin: 10px;
+}
+
+#signupForm input {
+    padding: 8px;
+    width: 200px;
+}
+
+#signup_footer{
+    padding-bottom: 15px;
+}
+
+.support_footer{
+    text-align: center;
+    
+    padding-top: 50px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: peru;
+    width: 100%;   
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;    
+}
+
+.sub-nav {
+    float: left;
+    overflow: hidden;    
+}
+
+.sub-nav .btn {
+    font-size: 16px;  
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: none;        
+}
+
+.navbar a:hover, .sub-nav:hover .btn {
+    color : black;
+}
+
+.sweet-recipes {
+    background-color: lavender; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.sweet-recipes h2 {
+    color: darkmagenta;
+    margin-bottom: 15px; 
+}
+
+.recipe-list {
+    list-style: none;
+    padding: 0; 
+}
+
+.recipe-list li {
+    margin: 10px 0; 
+}
+
+.recipe-list a {
+    color: darkblue; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.recipe-list a:hover {
+    color: darkred; 
+}
+
+
+
+.sub-nav .content {
+    display: none;
+    position: absolute;
+    background-color: peru;
+    min-width: 50px;
+    z-index: 1;
+}
+
+.sub-nav .content a .new_content{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sub-nav .content a:hover {
+
+}
+
+.sub-nav:hover .new_content {
+    display: block;
+}
+
+
+.sub-nav .sub-nav {
+    position: relative;
+}
+
+.sub-nav .sub-nav .content {
+    left: 100%;
+    top: 0;
+}
+
+
+
+.sub-nav .content li {
+    position: relative;
+    padding: 0; 
+    margin: 0; 
+}
+.new , .french-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%; 
+    background-color: peru;
+    text-align: left;
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+}
+.none{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 0px;
+}
+
+.sub-nav .content li:hover .new ,
+.sub-nav .content li:hover .french-dropdown{
+    display: block;
+}
+
+
+ .content {
+    display: none;
+    position: absolute;
+    left: 7px;
+    background-color: black;
+    width: 50%;
+    z-index: 1;	  
+  }
+  .content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  .content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  .sub-nav:hover .content {
+    display: block;
+  }
+
+
+
+.homepage{
+
+    background-image: url('login_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+.test :not("no_change") {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.no_change{
+    
+}
+
+.contact-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.social-media-links a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-media-links img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#gifContainer {
+    display: none;
+}
+
+aside {
+    width: 500px; 
+    padding: 0px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: #f9f9f9;
+    float: right;
+}
+
+aside h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+aside p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.rate-us {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.rating {
+    color: gold;
+    font-size: 40px;
+}
+
+.rating span {
+    cursor: pointer;
+}
+
+.rating span:hover,
+.rating span:hover ~ span {
+    color: darkgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

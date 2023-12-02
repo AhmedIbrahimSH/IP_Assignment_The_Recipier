@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class = "test">
+<head>
+    <title>The Recipier</title>
+    <link rel="icon" type="image/png" href="logoo.png"/>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="main.js"></script>
+</head>
+<body class = "english">
+    <header class="no_change">
+        <div class="navbar">
+            <a href="Login_In_Page.html"> Login </a>
+            <a href="home.html"> Home </a>
+        
+           
+            <div class="sub-nav">
+                <button class="btn">Recipes<i class="fa fa-caret-down"></i></button>
+                <div class="content">
+                    
+                      
+                    <li style="list-style-type: none;">
+                        <a href="English_break.html"> Breakfast </a>
+                        <ul class="new">
+                            <li><a href="English_break.html">English</a></li>
+                            <li><a href="French_break.html">French</a></li>
+                        </ul>
+                    </li>
+                        <li class="none" style="list-style-type: none;">
+                            <a href="Pizza.html"> Dinner Pizza </a>
+                            <a href="sweet.html"> Sweet </a>
+                        </li>
+                       
+                
+                </div>
+            </div>
+        
+            
+        
+            <div class="sub-nav">
+                <button class="btn">Dinner<i class="fa fa-caret-down"></i></button>
+                <div class="content">
+                    <a href="Pizza.html"> Pizza </a>
+                    <a href="pasta.html"> Pasta </a>
+                    <a href="burger.html"> Burger </a>
+                </div>
+            </div>
+            
+            <div class="sub-nav">
+                <button class="btn">Help<i class="fa fa-caret-down"></i></button>
+                <div class="content">
+                    <a href="Support.html"> Support </a>
+                    <a href="FAQ.html"> FAQ </a>
+                    <a href="Contact.html"> Contact us </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        
+        <img src="british_gif2.gif" width = 150px height="150px" style="float: right;">
+        <img src="british_gif2.gif" width = 150px height="150px" style="float: left;">
+    
+
+        <div style="text-align: center; padding-top: 30px;">
+            <button id="leftArrowButton">←</button>
+            <button id="rightArrowButton">→</button>
+        </div>
+      
+
+        
+        <div class="container">
+            <div id="recipe-steps">
+                <h1>Sausage English Breakfast</h1>
+                <ol>
+                    <li><strong>Prepare Sausages:</strong> Start by frying high-quality pork or beef sausages in a pan until they're golden brown and cooked through.</li>
+                    <Br>
+                    <li><strong>Cook Eggs:</strong> Fry, scramble, or poach eggs according to your preference.</li>
+                    <br>
+                    <li><strong>Prepare Bacon:</strong> Cook strips of back or streaky bacon in a pan until crispy.</li>
+                    <br>
+                    <li><strong>Toast Bread:</strong> Toast slices of white or wholegrain bread and spread with butter.</li>
+                    <br>
+                    <li><strong>Grill Tomatoes:</strong> Cut tomatoes in half, season with herbs, and grill until tender.</li>
+                    <br>
+                    <li><strong>Sauté Mushrooms:</strong> Sauté mushrooms in butter with a touch of garlic until they're soft and flavorful.</li>
+                    <br>
+                    <li><strong>Cook Black Pudding:</strong> Slice black pudding (blood sausage) and fry it until it's heated through.</li>
+                    <br>
+                    <li><strong>Prepare Baked Beans:</strong> Heat a small serving of baked beans to serve on the side.</li>
+                    <br>
+                    <li><strong>Serve with Hash Browns:</strong> Accompany the breakfast with crispy fried hash browns.</li>
+                </ol>
+            </div>
+
+            <div id = "beans_recipe" style="display: none;">
+                <h1>Beans English Breakfast</h1>
+                <ol>
+                    <li><strong>Prepare Baked Beans:</strong> Begin by heating a can of quality baked beans in a saucepan over medium heat.</li>
+                    <br>
+                    <li><strong>Cook Eggs:</strong> Fry, scramble, or poach eggs to your liking.</li>
+                    <br>
+                    <li><strong>Grill Tomatoes:</strong> Halve tomatoes, season with salt, pepper, and a little oil, and grill until soft.</li>
+                    <br>
+                    <li><strong>Sauté Mushrooms:</strong> Cook mushrooms in a pan with butter and a hint of garlic until golden.</li>
+                    <br>
+                    <li><strong>Toast Bread:</strong> Toast slices of your preferred bread and butter them while warm.</li>
+                    <br>
+                    <li><strong>Prepare Hash Browns:</strong> Fry hash browns in oil until they are crispy and golden brown.</li>
+                    <br>
+                    <li><strong>Cook Vegetarian Sausages:</strong> If including, fry vegetarian sausages according to package instructions.</li>
+                    <br>
+                    <li><strong>Serve Breakfast:</strong> Arrange all components on a plate, ensuring a generous serving of baked beans.</li>
+                    <br>
+                    <li><strong>Beverage:</strong> Accompany the breakfast with a cup of tea or coffee.</li>
+                </ol>
+            </div>
+            <div id="sausage_video" style="display: block;">
+                <h2 style="text-align: center;">Recipe Video</h2>
+                <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/lClgYiYqnD8?si=PwsXhDf2IhMvL1Jm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div id="beans_vid" style="display: none;">
+                <h2 style="text-align: center;">Recipe Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P-WNLRsLlvE?si=-JdfxSa8UwOUS3vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </div>
+        </div>
+
+
+       
+
+
+       
+
+      
+
+
+
+<script>
+
+    document.getElementById('rightArrowButton').addEventListener('click', function(e) {
+        document.getElementById('sausage_video').style.display = 'none';
+        document.getElementById('beans_vid').style.display = 'block';
+        document.getElementById('recipe-steps').style.display = 'none';
+        document.getElementById('beans_recipe').style.display = 'block';
+        
+
+                        
+    
+    });
+    document.getElementById('leftArrowButton').addEventListener('click', function(e) {
+        
+        document.getElementById('beans_vid').style.display = 'none';
+        document.getElementById('sausage_video').style.display = 'block';
+        document.getElementById('beans_recipe').style.display = 'none';
+
+        document.getElementById('recipe-steps').style.display = 'block';
+                        
+    
+    });
+
+
+    function redirectToBeansEnglishBreakfast() {
+        window.location.href = "Beans_English_break.html";
+    }
+
+
+
+</script>
+
+<footer>
+</footer>
+</html>

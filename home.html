@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The Recipier</title>
+        <link rel="icon" type="image/png" href="logoo.png"/>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body class="homepage">
+        
+        <header>
+            <div class="navbar">
+                <a href="Login_In_Page.html"> Login </a>
+                <a href="home.html"> Home </a>
+            
+               
+                <div class="sub-nav">
+                    <button class="btn">Recipes<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        
+                          
+                        <li style="list-style-type: none;">
+                            <a href="English_break.html"> Breakfast </a>
+                            <ul class="new">
+                                <li><a href="English_break.html">English</a></li>
+                                <li><a href="French_break.html">French</a></li>
+                            </ul>
+                        </li>
+                            <li class="none" style="list-style-type: none;">
+                                <a href="Pizza.html"> Dinner Pizza </a>
+                                <a href="sweet.html"> Sweet </a>
+                            </li>
+                           
+                    
+                    </div>
+                </div>
+            
+                
+            
+                <div class="sub-nav">
+                    <button class="btn">Dinner<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Pizza.html"> Pizza </a>
+                        <a href="pasta.html"> Pasta </a>
+                        <a href="burger.html"> Burger </a>
+                    </div>
+                </div>
+                
+                <div class="sub-nav">
+                    <button class="btn">Help<i class="fa fa-caret-down"></i></button>
+                    <div class="content">
+                        <a href="Support.html"> Support </a>
+                        <a href="FAQ.html"> FAQ </a>
+                        <a href="Contact.html"> Contact us </a>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center;">Welcome to <a href = "FAQ.html">The Recipier</a> where you&nbsp;<i>Find your favorite recipes here!</i>
+
+            <hr>
+
+
+            
+        </header>
+     
+            <div style="text-align: center;">
+                <h2 style="text-align: center">What do you want to cook today? </h2>
+
+                <label for="mealChoice">Choose a meal type:</label>
+                <select id="mealChoice" name="mealChoice">
+                    <option value="empty" selected>empty</option>
+                    <option value="sweet">Sweet</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            
+            <div class = "dinner" style="display: none ;">  <!--style="display: none;"-->
+                <h2>Choose your favorite dinner recipe</h2>
+                <select id="dinnerChoice" name="dinnerChoice" style="display: none;">
+                    <option value="pasta">Pasta</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                </select>
+            </div>
+
+        </div>
+
+            <div id = "hidden_sweet" style="display: none; text-align: center;">
+
+                <h2>Choose your Breakfast type </h2>
+                <input type="radio" id="english_button" name="break_choice" value="english_button">
+                <label for="English">English</label>
+                <input type="radio" id="french_button" name="break_choice" value="french_button">
+                <label for="French">French</label><br>
+
+                
+
+            
+               
+            </div>
+
+            <div id = "hidden_dinner" style="display: none; text-align: center;">
+
+                <h2>Choose your Dinner type </h2>
+                <input type="radio" id="empty" name="dinner" value=" " checked>
+                <label for="empty"> </label>
+                <input type="radio" id="pasta" name="dinner" value="pasta">
+                <label for="pasta">pasta</label>
+                <input type="radio" id="pizza" name="dinner" value="pizza">
+                <label for="pizza">pizza</label>
+                <input type="radio" id="burger" name="dinner" value="burger">
+                <label for="burger">burger</label>
+
+                <div id = "br_image" style="display: none; text-align: left;">
+                    <img src = "breakfast.png " width="300px" height = "300px" float = left; style="padding-left: 250px"">
+                </div>
+
+            
+                <l></l>
+               
+            </div>
+
+            <div class = "hidden_breakfast">
+
+            </div>
+
+            
+
+        <br>
+
+
+         <script>
+                document.getElementById('mealChoice').addEventListener('change', function() {
+                    var main = document.getElementById('mealChoice').value;
+                    
+                    
+                    if(main == 'sweet'){
+                        document.getElementById('hidden_dinner').style.display = 'none';
+                        go_to_sweet();
+
+                    }
+                    else if(main == 'breakfast'){
+
+                        go_to_breakfast();
+                        
+
+                    }
+                    else if(main == 'dinner'){
+                        document.getElementById('br_image').style.display = 'block';
+                        document.body.style.backgroundImage = "url('breakfast_background.jpg')";
+                        document.body.style.backgroundRepeat = "no-repeat";
+                        document.body.style.backgroundSize = "cover";
+                        document.querySelector('.navbar').style.backgroundColor = 'peru';
+                        document.getElementById('hidden_dinner').style.display = 'block';
+                        document.querySelectorAll('input[name="dinner"]').forEach(function(radio) {
+                            radio.addEventListener('change', function() {
+                                if (this.id === 'pizza' && this.checked) {
+                                    this.checked = false;
+                                    window.location.href = 'pizza.html'; 
+                                }
+                                else if (this.id === 'pasta' && this.checked) {
+                                    this.checked = false;
+
+                                    window.location.href = 'pasta.html'; 
+                                }
+                                else if (this.id === 'burger' && this.checked) {
+                                    this.checked = false;
+
+                                    window.location.href = 'burger.html';
+                                }
+                            });
+    });
+                        
+                    }
+
+
+                    else if(main == 'empty'){
+                        document.getElementById('hidden_dinner').style.display = 'none';
+                        document.getElementById('hidden_breakfast').style.display = 'none';
+                        document.getElementById('br_image').style.display = 'none';
+                        document.querySelector('.navbar').style.backgroundColor = 'peru';
+                        document.body.style.backgroundImage = "url('login_background.jpg')";
+                        document.body.style.backgroundRepeat = "no-repeat";
+                        document.body.style.backgroundSize = "cover";                     }
+                
+                });
+
+                function redirectToEnglishBreakfast() {
+                        window.location.href = 'English_break.html';
+                    }
+                function go_to_sweet(){
+                    window.location.href = 'sweet.html';
+                }
+
+                function go_to_breakfast(){
+                    window.location.href = 'English_break.html';
+                }
+
+
+            </script>
+
+          
+           
+        
+   
+
+        
+    </body>
+
+    <img src = "logo-removebg-preview.png" alt = "logo" width = "300px" height = "300px" style = "float: right; margin-left: 20px; margin-top: 20px; margin-bottom: 20px; margin-right: 20px;" fixed>
+
+    <footer style="padding-top: 300px;">
+        <marquee behavior="alternate" direction="left" scrollamount="10"><h1><i><b>Cooking is fun</b></i></h1></marquee> <d></d>
+    </footer>
+   
+</html>

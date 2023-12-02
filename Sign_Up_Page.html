@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Recipier</title>
+    <link rel="icon" type="image/png" href="logoo.png"/>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="main.js"></script>
+</head>
+<body>
+        
+       
+
+<header>
+    <div class="navbar">
+        <a href="Login_In_Page.html"> Login </a>
+        <a href="home.html"> Home </a>
+    
+       
+        <div class="sub-nav">
+            <button class="btn">Recipes<i class="fa fa-caret-down"></i></button>
+            <div class="content">
+                
+                  
+                <li style="list-style-type: none;">
+                    <a href="English_break.html"> Breakfast </a>
+                    <ul class="new">
+                        <li><a href="English_break.html">English</a></li>
+                        <li><a href="French_break.html">French</a></li>
+                    </ul>
+                </li>
+                    <li class="none" style="list-style-type: none;">
+                        <a href="Pizza.html"> Dinner Pizza </a>
+                        <a href="sweet.html"> Sweet </a>
+                    </li>
+                   
+            
+            </div>
+        </div>
+    
+        
+    
+        <div class="sub-nav">
+            <button class="btn">Dinner<i class="fa fa-caret-down"></i></button>
+            <div class="content">
+                <a href="Pizza.html"> Pizza </a>
+                <a href="pasta.html"> Pasta </a>
+                <a href="burger.html"> Burger </a>
+            </div>
+        </div>
+        
+        <div class="sub-nav">
+            <button class="btn">Help<i class="fa fa-caret-down"></i></button>
+            <div class="content">
+                <a href="Support.html"> Support </a>
+                <a href="FAQ.html"> FAQ </a>
+                <a href="Contact.html"> Contact us </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <img src="sign-up_gif.gif" width="600px" height="600px">
+
+    <form id="signupForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="SignUp" id="SignUp">
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if(username && email && password) {
+            alert("You have successfully signed up.");
+            window.location.href = 'home.html';
+            return false; 
+        } else {
+            alert("Please fill all the fields.");
+            return false; 
+        }
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+   
+</html>
